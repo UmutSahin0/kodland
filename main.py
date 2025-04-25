@@ -11,13 +11,13 @@ game_state = "menu"  # 'menu' or 'playing'
 sound_on = True
 
 # Player
-player = Actor(r'C:\Users\umuts\Desktop\pygame\images\player_action1.png') 
+player = Actor('player_action1.png') 
 player.pos = (WIDTH // 2, HEIGHT - 50)
 
 # Player image paths
 player_images = [
-    r'C:\Users\umuts\Desktop\pygame\images\player_action1.png',
-    r'C:\Users\umuts\Desktop\pygame\images\player_action2.png'
+    'player_action1.png',
+    'player_action2.png'
 ]
 
 # Current image index
@@ -85,13 +85,13 @@ def create_buttons():
 create_buttons()
 
 def spawn_star():
-    star = Actor(r'C:\Users\umuts\Desktop\pygame\images\star_gold.png')
+    star = Actor('star_gold.png')
     star.x = random.randint(20, WIDTH - 20)
     star.y = 0
     stars.append(star)
 
 def spawn_stone():
-    stone = Actor(r'C:\Users\umuts\Desktop\pygame\images\meteorbrown_big1.png')
+    stone = Actor('meteorbrown_big1.png')
     stone.x = random.randint(20, WIDTH - 20)
     stone.y = 0
     stones.append(stone)
